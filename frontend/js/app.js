@@ -15,7 +15,7 @@ const state = {
 };
 
 // ── Backend API URL (change if deploying) ──
-const API_BASE = 'https://campus-bot-ml-2.onrender.com';
+const API_BASE = 'https://campus-bot-ml-2.onrender.com/api';
 
 // ── DOM Shortcuts ──
 const $ = (id) => document.getElementById(id);
