@@ -1800,3 +1800,69 @@ body {
     overflow: hidden !important;
   }
 }
+/* =================================
+   MOBILE HEADER SPACE FIX
+================================= */
+
+@media (max-width: 768px) {
+
+  .profile-btn {
+    display: none !important;
+  }
+
+  .header-right {
+    gap: 4px;
+  }
+}
+/* =================================
+   SIDEBAR PROFILE BUTTON
+================================= */
+
+.sidebar-profile-btn {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 12px;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface2);
+
+  color: var(--text);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 0.9rem;
+
+  transition: 0.2s ease;
+}
+
+.sidebar-profile-btn:hover {
+
+  border-color: var(--accent);
+
+  color: var(--accent);
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+
+  .profile-btn {
+    display: none !important;
+  }
+
+  .sidebar-profile-btn {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+
+  .sidebar-profile-btn {
+    display: block;
+  }
+}
