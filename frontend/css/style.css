@@ -1480,3 +1480,34 @@ select.form-control option {
     font-size: 0.7rem;
   }
 }
+
+/* =================================
+   DESKTOP MODE ON MOBILE FIX
+================================= */
+
+@media (min-width: 769px) and (max-width: 1100px) {
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .bubble {
+    max-width: 420px;
+  }
+
+  .chat-messages {
+    padding: 16px;
+  }
+
+  .header {
+    padding: 0 12px;
+  }
+
+  .bot-name {
+    font-size: 1rem;
+  }
+
+  .lang-picker {
+    transform: scale(0.9);
+  }
+}
