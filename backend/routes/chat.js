@@ -13,7 +13,7 @@ let FAQ, Log;
 try {
   FAQ = require('../models/FAQ');
   Log = require('../models/Log');
-} catch (e) {}
+} catch (e) { }
 
 // ── MULTILINGUAL FALLBACK MESSAGES ──
 const FALLBACKS = {
@@ -58,7 +58,7 @@ async function predictIntent(text) {
 
     const response =
       await fetch(
-        'http://127.0.0.1:5001/predict',
+        'https://campus-bot-ml-1.onrender.com/predict',
         {
           method: 'POST',
 
@@ -106,42 +106,42 @@ router.post('/chat', async (req, res) => {
       const faqs = await FAQ.find({ isActive: true });
       let match = null;
 
-// Try ML prediction first
-const predictedIntent =
-  await predictIntent(message);
+      // Try ML prediction first
+      const predictedIntent =
+        await predictIntent(message);
 
-if (predictedIntent) {
+      if (predictedIntent) {
 
-  console.log(
-  'Predicted Intent:',
-  predictedIntent
-);
+        console.log(
+          'Predicted Intent:',
+          predictedIntent
+        );
 
-match = faqs.find(faq =>
+        match = faqs.find(faq =>
 
-  (faq.keywords || [])
-  .some(keyword =>
+          (faq.keywords || [])
+            .some(keyword =>
 
-    keyword
-      .toLowerCase()
-      .includes(
-        predictedIntent
-          ?.toLowerCase()
-      )
-  )
-);
-console.log(
-  'Predicted Intent:',
-  predictedIntent
-);
-}
+              keyword
+                .toLowerCase()
+                .includes(
+                  predictedIntent
+                    ?.toLowerCase()
+                )
+            )
+        );
+        console.log(
+          'Predicted Intent:',
+          predictedIntent
+        );
+      }
 
-// Fallback to keyword matching
-if (!match) {
+      // Fallback to keyword matching
+      if (!match) {
 
-  match =
-    matchFAQ(message, faqs);
-}
+        match =
+          matchFAQ(message, faqs);
+      }
 
       if (match) {
         intent = match.category;
@@ -180,57 +180,57 @@ router.post(
   protect,
 
   async (req, res) => {
-  try {
-    // Get data from frontend
+    try {
+      // Get data from frontend
 
-const {
+      const {
 
-  // NEW
-  conversationId,
+        // NEW
+        conversationId,
 
-  userMessage,
+        userMessage,
 
-  botReply,
+        botReply,
 
-  lang = 'en',
+        lang = 'en',
 
-  timestamp
+        timestamp
 
-} = req.body;
+      } = req.body;
 
-    if (!userMessage || !botReply) {
-      return res.status(400).json({ error: 'Missing fields' });
+      if (!userMessage || !botReply) {
+        return res.status(400).json({ error: 'Missing fields' });
+      }
+
+      if (Log) {
+        // Create MongoDB log document
+
+        const log = new Log({
+
+          // NEW
+          conversationId,
+
+          userMessage:
+            userMessage.trim(),
+
+          botReply,
+
+          lang,
+
+          timestamp:
+            timestamp
+              ? new Date(timestamp)
+              : new Date(),
+        });
+        await log.save();
+      }
+
+      res.json({ success: true, message: 'Logged successfully' });
+    } catch (error) {
+      // Don't crash the app if logging fails
+      console.error('Logging error:', error.message);
+      res.json({ success: false });
     }
-
-    if (Log) {
-      // Create MongoDB log document
-
-const log = new Log({
-
-  // NEW
-  conversationId,
-
-  userMessage:
-    userMessage.trim(),
-
-  botReply,
-
-  lang,
-
-  timestamp:
-    timestamp
-      ? new Date(timestamp)
-      : new Date(),
-});
-      await log.save();
-    }
-
-    res.json({ success: true, message: 'Logged successfully' });
-  } catch (error) {
-    // Don't crash the app if logging fails
-    console.error('Logging error:', error.message);
-    res.json({ success: false });
-  }
-});
+  });
 
 module.exports = router;
