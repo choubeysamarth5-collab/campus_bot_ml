@@ -1432,6 +1432,7 @@ select.form-control option {
 
   .header-right {
     overflow: visible;
+    gap: 6px;
   }
 
   .app-layout {
@@ -1460,15 +1461,6 @@ select.form-control option {
   .chat-input {
     width: 100%;
     min-width: 0;
-  }
-
-  .header {
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .header-right {
-    gap: 6px;
   }
 
   .lang-picker {
@@ -1543,18 +1535,34 @@ select.form-control option {
     font-size: 0.75rem;
   }
 
-  .lang-menu {
+ .lang-menu {
 
-    position: absolute;
+    position: fixed;
 
-    top: 52px;
+    top: 70px;
 
-    right: 0;
+    right: 12px;
 
-    min-width: 100px;
+    min-width: 120px;
 
-    z-index: 99999;
-  }
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    padding: 8px;
+
+    display: none;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    z-index: 999999;
+
+    box-shadow: var(--shadow);
+}
 
   .admin-link {
     width: 38px;
@@ -1767,4 +1775,24 @@ body {
   .lang-menu.active {
     display: flex;
   }
+}
+/* =================================
+   FINAL MOBILE DROPDOWN FIX
+================================= */
+
+.lang-menu.active {
+  display: flex;
+}
+
+.header {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 9999;
+}
+
+.chat-messages {
+  overflow-y: auto;
 }
