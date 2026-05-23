@@ -812,3 +812,29 @@ function init() {
 
 // Start the app!
 init();
+// ================================
+// MOBILE SIDEBAR TOGGLE
+// ================================
+
+const mobileMenuBtn =
+  document.getElementById(
+    'mobileMenuBtn'
+  );
+
+const sidebar =
+  document.querySelector(
+    '.sidebar'
+  );
+
+if (mobileMenuBtn && sidebar) {
+
+  mobileMenuBtn.addEventListener(
+    'click',
+    () => {
+
+      sidebar.classList.toggle(
+        'active'
+      );
+    }
+  );
+}

@@ -1340,3 +1340,80 @@ select.form-control option {
 
   color: var(--accent);
 }
+/* =================================
+   MOBILE SIDEBAR FIX
+================================= */
+
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .sidebar {
+    display: flex !important;
+    position: fixed;
+    left: -260px;
+    top: var(--header-h);
+    width: 240px;
+    height: calc(100vh - var(--header-h));
+    z-index: 999;
+    transition: left 0.3s ease;
+    background: var(--surface);
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .chat-area {
+    width: 100%;
+  }
+
+  .app-layout {
+    width: 100%;
+  }
+
+  .chips-row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 12px;
+  }
+
+  .chip {
+    flex-shrink: 0;
+  }
+
+  .input-bar {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .chat-input {
+    min-width: 0;
+  }
+
+  .msg-row {
+    width: 100%;
+  }
+
+  .bubble {
+    max-width: 88%;
+  }
+}
