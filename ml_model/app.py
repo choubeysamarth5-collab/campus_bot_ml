@@ -4,11 +4,11 @@ import pickle
 app = Flask(__name__)
 
 model = pickle.load(
-    open("model.pkl", "rb")
+    open("./model.pkl", "rb")
 )
 
 vectorizer = pickle.load(
-    open("vectorizer.pkl", "rb")
+    open("./vectorizer.pkl", "rb")
 )
 
 @app.route("/predict", methods=["POST"])

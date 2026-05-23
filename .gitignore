@@ -43,8 +43,8 @@ __pycache__/
 *.pyc
 venv/
 
-# ML model
-ml_model/model.pkl
+# # ML model
+# ml_model/model.pkl
 
 # OS generated files
 .DS_Store
