@@ -32,38 +32,26 @@
       <button class="admin-nav-btn" onclick="showSection('add-faq', this)">➕ Add FAQ</button>
       <button class="admin-nav-btn" onclick="showSection('logs', this)">📜 Chat Logs</button>
       <button class="admin-nav-btn" onclick="showSection('feedback', this)">⭐ Feedback</button>
-      <button
-  class="admin-nav-btn"
-  onclick="showSection('users', this)">
+      <button class="admin-nav-btn" onclick="showSection('users', this)">
 
-  👥 Users
+        👥 Users
 
-</button>
-<button
-  class="admin-nav-btn"
-  id="manageAdminsBtn"
-  onclick="showSection('admins', this)"
-  style="display:none">
+      </button>
+      <button class="admin-nav-btn" id="manageAdminsBtn" onclick="showSection('admins', this)" style="display:none">
 
-  🛡 Manage Admins
+        🛡 Manage Admins
 
-</button>
-<button
-  class="admin-nav-btn"
-  id="addAdminNavBtn"
-  onclick="showSection('add-admin', this)"
-  style="display:none">
+      </button>
+      <button class="admin-nav-btn" id="addAdminNavBtn" onclick="showSection('add-admin', this)" style="display:none">
 
-  🛡 Add Admin
+        🛡 Add Admin
 
-</button>
-<button
-  class="admin-nav-btn"
-  onclick="showSection('change-password', this)">
+      </button>
+      <button class="admin-nav-btn" onclick="showSection('change-password', this)">
 
-  🔐 Change Password
+        🔐 Change Password
 
-</button>
+      </button>
 
     </nav>
 
@@ -153,6 +141,17 @@
             <label>Answer (Marathi – optional)</label>
             <textarea id="faqAnswerMr" class="form-control" placeholder="मराठी उत्तर…"></textarea>
           </div>
+          <div class="form-group">
+            <label>Answer (Tamil – optional)</label>
+            <textarea id="faqAnswerTa" class="form-control" placeholder="தமிழ் பதில்…">
+  </textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Answer (Telugu – optional)</label>
+            <textarea id="faqAnswerTe" class="form-control" placeholder="తెలుగు సమాధానం…">
+  </textarea>
+          </div>
           <button class="btn-primary" style="width:100%;margin-top:8px" onclick="addFAQ()">
             ➕ Add FAQ
           </button>
@@ -176,159 +175,127 @@
         </div>
       </div>
       <!-- USERS -->
-<div id="section-users" class="admin-section">
+      <div id="section-users" class="admin-section">
 
-  <h2>Registered Users</h2>
+        <h2>Registered Users</h2>
 
-  <div class="card">
+        <div class="card">
 
-    <div id="usersContainer">
+          <div id="usersContainer">
 
-      Loading users...
+            Loading users...
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CHANGE PASSWORD -->
+      <div id="section-change-password" class="admin-section">
+
+        <h2>Change Password</h2>
+
+        <div class="card" style="max-width:500px">
+
+          <div class="form-group">
+
+            <label>Current Password</label>
+
+            <input type="password" id="currentAdminPassword" class="form-control" placeholder="Current password" />
+
+          </div>
+
+          <div class="form-group">
+
+            <label>New Password</label>
+
+            <input type="password" id="newAdminPassword" class="form-control" placeholder="New password" />
+
+          </div>
+
+          <button class="btn-primary" style="width:100%" onclick="changeAdminPassword()">
+
+            🔐 Update Password
+
+          </button>
+
+          <p id="changePasswordMsg" style="margin-top:10px">
+          </p>
+
+        </div>
+
+      </div>
+      <!-- MANAGE ADMINS -->
+      <div id="section-admins" class="admin-section">
+
+        <h2>Manage Admins</h2>
+
+        <div class="card">
+
+          <div id="adminsContainer">
+
+            Loading admins...
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- ADD ADMIN -->
+      <div id="section-add-admin" class="admin-section">
+
+        <h2>Create Admin</h2>
+
+        <div class="card" style="max-width:600px">
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="adminName" class="form-control" placeholder="Admin name" />
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="adminEmail" class="form-control" placeholder="admin@example.com" />
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="adminPassword" class="form-control" placeholder="Password" />
+          </div>
+
+          <div class="form-group">
+            <label>Role</label>
+
+            <select id="adminRole" class="form-control">
+
+              <option value="admin">
+                Admin
+              </option>
+
+              <option value="superadmin">
+                Superadmin
+              </option>
+
+            </select>
+          </div>
+
+          <button class="btn-primary" style="width:100%" onclick="createAdmin()">
+
+            ➕ Create Admin
+
+          </button>
+
+          <p id="addAdminMsg" style="margin-top:10px">
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
   </div>
-
-</div>
-
-<!-- CHANGE PASSWORD -->
-<div id="section-change-password" class="admin-section">
-
-  <h2>Change Password</h2>
-
-  <div class="card" style="max-width:500px">
-
-    <div class="form-group">
-
-      <label>Current Password</label>
-
-      <input
-        type="password"
-        id="currentAdminPassword"
-        class="form-control"
-        placeholder="Current password" />
-
-    </div>
-
-    <div class="form-group">
-
-      <label>New Password</label>
-
-      <input
-        type="password"
-        id="newAdminPassword"
-        class="form-control"
-        placeholder="New password" />
-
-    </div>
-
-    <button
-      class="btn-primary"
-      style="width:100%"
-      onclick="changeAdminPassword()">
-
-      🔐 Update Password
-
-    </button>
-
-    <p
-      id="changePasswordMsg"
-      style="margin-top:10px">
-    </p>
-
-  </div>
-
-</div>
-<!-- MANAGE ADMINS -->
-<div id="section-admins" class="admin-section">
-
-  <h2>Manage Admins</h2>
-
-  <div class="card">
-
-    <div id="adminsContainer">
-
-      Loading admins...
-
-    </div>
-
-  </div>
-
-</div>
-<!-- ADD ADMIN -->
-<div id="section-add-admin" class="admin-section">
-
-  <h2>Create Admin</h2>
-
-  <div class="card" style="max-width:600px">
-
-    <div class="form-group">
-      <label>Name</label>
-      <input
-        type="text"
-        id="adminName"
-        class="form-control"
-        placeholder="Admin name" />
-    </div>
-
-    <div class="form-group">
-      <label>Email</label>
-      <input
-        type="email"
-        id="adminEmail"
-        class="form-control"
-        placeholder="admin@example.com" />
-    </div>
-
-    <div class="form-group">
-      <label>Password</label>
-      <input
-        type="password"
-        id="adminPassword"
-        class="form-control"
-        placeholder="Password" />
-    </div>
-
-    <div class="form-group">
-      <label>Role</label>
-
-      <select
-        id="adminRole"
-        class="form-control">
-
-        <option value="admin">
-          Admin
-        </option>
-
-        <option value="superadmin">
-          Superadmin
-        </option>
-
-      </select>
-    </div>
-
-    <button
-      class="btn-primary"
-      style="width:100%"
-      onclick="createAdmin()">
-
-      ➕ Create Admin
-
-    </button>
-
-    <p
-      id="addAdminMsg"
-      style="margin-top:10px">
-    </p>
-
-   </div>
-
-</div>
-
-</div>
-
-</div>
   <script src="auth/auth.js"></script>
   <script src="js/translations.js"></script>
   <script src="js/admin-new.js"></script>

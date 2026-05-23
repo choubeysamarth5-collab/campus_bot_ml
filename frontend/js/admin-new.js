@@ -242,6 +242,12 @@ async function addFAQ() {
     const mr =
         document.getElementById('faqAnswerMr').value.trim();
 
+    const ta =
+        document.getElementById('faqAnswerTa').value.trim();
+
+    const te =
+        document.getElementById('faqAnswerTe').value.trim();
+
     const msg =
         document.getElementById('addFaqMsg');
 
