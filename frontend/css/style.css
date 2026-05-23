@@ -1572,20 +1572,25 @@ select.form-control option {
     border-radius: 10px;
 }
 
-  .admin-link {
-    width: 38px;
-    height: 38px;
-    padding: 0;
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+ .admin-link {
 
-  .admin-link::before {
-    content: "🚪";
-    font-size: 18px;
-  }
+    height: 38px;
+
+    padding: 0 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 0.8rem;
+
+    gap: 4px;
+
+    white-space: nowrap;
+}
+
 
   .profile-btn,
   .theme-toggle {
@@ -1745,45 +1750,6 @@ body {
   }
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-
-  .lang-dropdown {
-    position: relative;
-  }
-
-  .lang-current {
-    display: block;
-
-    min-width: 58px;
-
-    text-align: center;
-
-    padding: 8px 10px;
-
-    border-radius: 14px;
-
-    font-size: 0.75rem;
-  }
-
-  .lang-menu {
-    display: none;
-
-    position: absolute;
-
-    top: 52px;
-
-    right: 0;
-
-    min-width: 100px;
-
-    z-index: 99999;
-  }
-
-  .lang-menu.active {
-    display: flex;
-  }
-}
 /* =================================
    FINAL MOBILE DROPDOWN FIX
 ================================= */
