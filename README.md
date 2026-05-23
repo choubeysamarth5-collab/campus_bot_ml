@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 CampusBot – Multilingual AI Chatbot for Campus Query Assistance
 
 > A full-stack multilingual chatbot that helps college students get instant answers about fees, admissions, exams, hostel, library, placements, and more.
@@ -327,3 +328,6 @@ If chatbot can't answer: **helpdesk@college.edu** | **+91 12345 67890**
 ---
 
 *Made with ❤️ for college students | Hackathon & Resume Ready*
+=======
+# campus_bot_ml
+>>>>>>> 198390c5631f2617ce0e65e1a1c9d43572a8a0f8
