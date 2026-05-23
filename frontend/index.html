@@ -197,7 +197,10 @@
       const logoutLink = document.getElementById('adminOrLogoutLink');
 
       if (logoutLink) {
-        logoutLink.innerHTML = '🚪 Logout';
+        logoutLink.innerHTML =
+          window.innerWidth <= 768
+            ? '🚪'
+            : '🚪 Logout';
         logoutLink.href = '#';
         logoutLink.title = 'Logout';
 
