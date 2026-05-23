@@ -1340,6 +1340,7 @@ select.form-control option {
 
   color: var(--accent);
 }
+
 /* =================================
    MOBILE SIDEBAR FIX
 ================================= */
@@ -1415,5 +1416,67 @@ select.form-control option {
 
   .bubble {
     max-width: 88%;
+  }
+}
+
+/* =================================
+   LOGIN MOBILE FIX
+================================= */
+
+@media (max-width: 768px) {
+
+  body,
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .app-layout {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .chat-area {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .chat-messages {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 12px;
+  }
+
+  .input-bar {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .chat-input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .header {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .header-right {
+    gap: 6px;
+  }
+
+  .lang-picker {
+    display: none;
+  }
+
+  .bot-name {
+    font-size: 1rem;
+  }
+
+  .bot-status {
+    font-size: 0.7rem;
   }
 }
