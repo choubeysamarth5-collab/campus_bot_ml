@@ -15,35 +15,61 @@
 <body data-theme="dark">
 
   <!-- ===== HEADER ===== -->
- <header class="header">
-  <div class="header-left">
+  <header class="header">
+    <div class="header-left">
 
-    <button class="mobile-menu-btn" id="mobileMenuBtn">
-      ☰
-    </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        ☰
+      </button>
 
-    <div class="bot-avatar">
-      <span class="bot-icon">🎓</span>
-      <span class="status-dot"></span>
+      <div class="bot-avatar">
+        <span class="bot-icon">🎓</span>
+        <span class="status-dot"></span>
+      </div>
+
+      <div class="bot-info">
+        <h1 class="bot-name">CampusBot</h1>
+        <span class="bot-status">
+          Online · Always here to help
+        </span>
+      </div>
+
     </div>
 
-    <div class="bot-info">
-      <h1 class="bot-name">CampusBot</h1>
-      <span class="bot-status">
-        Online · Always here to help
-      </span>
-    </div>
-
-  </div>
-
-  <div class="header-right">
+    <div class="header-right">
       <!-- Language Selector -->
-      <div class="lang-picker">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="hi">हि</button>
-        <button class="lang-btn" data-lang="mr">म</button>
-        <button class="lang-btn" data-lang="ta">த</button>
-        <button class="lang-btn" data-lang="te">తె</button>
+      <div class="lang-dropdown">
+
+        <button class="lang-current" id="langCurrentBtn">
+
+          EN ⌄
+
+        </button>
+
+        <div class="lang-menu" id="langMenu">
+
+          <button class="lang-btn active" data-lang="en">
+            EN
+          </button>
+
+          <button class="lang-btn" data-lang="hi">
+            हिन्दी
+          </button>
+
+          <button class="lang-btn" data-lang="mr">
+            Marathi
+          </button>
+
+          <button class="lang-btn" data-lang="ta">
+            தமிழ்
+          </button>
+
+          <button class="lang-btn" data-lang="te">
+            తెలుగు
+          </button>
+
+        </div>
+
       </div>
       <!-- Theme Toggle -->
       <button class="theme-toggle" id="themeToggle" title="Toggle theme">

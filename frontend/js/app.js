@@ -838,3 +838,50 @@ if (mobileMenuBtn && sidebar) {
     }
   );
 }
+// ================================
+// LANGUAGE DROPDOWN
+// ================================
+
+const langCurrentBtn =
+  document.getElementById(
+    'langCurrentBtn'
+  );
+
+const langMenu =
+  document.getElementById(
+    'langMenu'
+  );
+
+if (
+  langCurrentBtn &&
+  langMenu
+) {
+
+  langCurrentBtn.addEventListener(
+    'click',
+    () => {
+
+      langMenu.classList.toggle(
+        'active'
+      );
+    }
+  );
+
+  document
+    .querySelectorAll('.lang-btn')
+    .forEach(btn => {
+
+      btn.addEventListener(
+        'click',
+        () => {
+
+          langCurrentBtn.textContent =
+            btn.textContent + ' ⌄';
+
+          langMenu.classList.remove(
+            'active'
+          );
+        }
+      );
+    });
+}
