@@ -2,7 +2,7 @@
 // // admin.js – Admin Panel Logic
 // // =============================================
 
-// const API_BASE = 'https://campus-bot-ml.onrender.com';
+// https://campus-bot-ml-2.onrender.com = 'https://campus-bot-ml-2.onrender.com';
 
 // // Switch between admin sections
 // function showSection(name) {
@@ -1097,7 +1097,7 @@ async function createAdmin() {
             password,
             role,
 
-          
+
           })
         }
       );
@@ -1297,8 +1297,8 @@ async function loadAdmins() {
               <td>
 
                 ${admin.isActive
-                  ? '🟢 Active'
-                  : '🔴 Disabled'}
+        ? '🟢 Active'
+        : '🔴 Disabled'}
 
               </td>
 
@@ -1312,8 +1312,8 @@ async function loadAdmins() {
                   )">
 
                   ${admin.isActive
-                    ? 'Disable'
-                    : 'Enable'}
+        ? 'Disable'
+        : 'Enable'}
 
                 </button>
 
