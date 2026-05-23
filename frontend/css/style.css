@@ -1523,6 +1523,36 @@ select.form-control option {
     gap: 6px;
   }
 
+  .lang-dropdown {
+    position: relative;
+  }
+
+  .lang-current {
+
+    min-width: 58px;
+
+    text-align: center;
+
+    padding: 8px 10px;
+
+    border-radius: 14px;
+
+    font-size: 0.75rem;
+  }
+
+  .lang-menu {
+
+    position: absolute;
+
+    top: 52px;
+
+    right: 0;
+
+    min-width: 100px;
+
+    z-index: 99999;
+  }
+
   .admin-link {
     width: 38px;
     height: 38px;
@@ -1560,6 +1590,7 @@ select.form-control option {
     white-space: nowrap;
   }
 }
+
 /* =================================
    FINAL OVERFLOW FIX
 ================================= */
@@ -1610,6 +1641,7 @@ body {
     overflow-x: auto;
   }
 }
+
 /* =================================
    LANGUAGE DROPDOWN
 ================================= */
@@ -1683,7 +1715,7 @@ body {
   }
 
   .lang-menu {
-    display: flex !important;
+    display: flex;
     position: static;
     flex-direction: row;
     background: transparent;
@@ -1697,12 +1729,36 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
 
+  .lang-dropdown {
+    position: relative;
+  }
+
   .lang-current {
     display: block;
+
+    min-width: 58px;
+
+    text-align: center;
+
+    padding: 8px 10px;
+
+    border-radius: 14px;
+
+    font-size: 0.75rem;
   }
 
   .lang-menu {
     display: none;
+
+    position: absolute;
+
+    top: 52px;
+
+    right: 0;
+
+    min-width: 100px;
+
+    z-index: 99999;
   }
 
   .lang-menu.active {
