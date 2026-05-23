@@ -1512,56 +1512,7 @@ select.form-control option {
   }
 }
 
-/* =================================
-   MOBILE + DESKTOP MODE FIX
-================================= */
 
-@media (max-width: 1100px) {
-
-  .sidebar {
-    width: 78px !important;
-    min-width: 78px !important;
-    overflow-x: hidden;
-    padding: 12px 6px;
-  }
-
-  .sidebar-title,
-  .contact-link,
-  .sidebar-footer p,
-  .new-chat-btn,
-  .clear-history-btn {
-    display: none;
-  }
-
-  .topic-list {
-    align-items: center;
-  }
-
-  .topic-btn {
-    width: 60px;
-    font-size: 10px;
-    padding: 8px 4px;
-    text-align: center;
-  }
-
-  .chat-area {
-    flex: 1;
-    width: calc(100% - 78px);
-  }
-
-  .bubble {
-    max-width: 85%;
-  }
-
-  .chips-row {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-  }
-
-  .chip {
-    flex-shrink: 0;
-  }
-}
 /* =================================
    MOBILE HEADER FIX
 ================================= */
@@ -1607,5 +1558,55 @@ select.form-control option {
   .bot-status {
     font-size: 0.72rem;
     white-space: nowrap;
+  }
+}
+/* =================================
+   FINAL OVERFLOW FIX
+================================= */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.app-layout {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.chat-area {
+  flex: 1;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.chat-messages {
+  width: 100%;
+  max-width: 100%;
+}
+
+.input-bar {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.chat-input {
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  .bubble {
+    max-width: calc(100vw - 90px);
+  }
+
+  .chips-row {
+    width: 100%;
+    overflow-x: auto;
   }
 }
