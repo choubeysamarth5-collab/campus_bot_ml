@@ -2,7 +2,7 @@
 // // admin.js – Admin Panel Logic
 // // =============================================
 
-// const API_BASE = 'http://127.0.0.1:5000/api';
+// const API_BASE = 'https://campus-bot-ml.onrender.com';
 
 // // Switch between admin sections
 // function showSection(name) {
@@ -274,7 +274,7 @@
 // admin.js – Admin Panel Logic
 // =============================================
 
-const API_BASE = 'http://127.0.0.1:5000/api';
+const API_BASE = 'https://campus-bot-ml.onrender.com';
 
 // =============================================
 // SECTION SWITCHING

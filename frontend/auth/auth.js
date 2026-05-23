@@ -24,7 +24,7 @@
 //   In production, httpOnly cookies are more secure (prevent XSS).
 // =================================================================
 
-const API = 'http://127.0.0.1:5000/api';
+const API = 'https://campus-bot-ml.onrender.com';
 
 // ── Key names in localStorage ─────────────────────────────────────
 const TOKEN_KEY = 'campusbot_token';

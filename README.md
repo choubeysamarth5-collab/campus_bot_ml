@@ -136,7 +136,7 @@ You should see:
 ```
 ✅ MongoDB connected successfully!
 ✅ Seeded 8 FAQs into MongoDB
-🚀 CampusBot server running at http://localhost:5000
+🚀 CampusBot server running at https://campus-bot-ml.onrender.com
 ```
 
 ---
@@ -163,7 +163,7 @@ npx serve .
 Open your browser and go to:
 - **Chatbot**: `frontend/index.html`
 - **Admin Panel**: `frontend/admin.html`
-- **API Health Check**: `http://localhost:5000/api/health`
+- **API Health Check**: `https://campus-bot-ml.onrender.com`
 
 ---
 

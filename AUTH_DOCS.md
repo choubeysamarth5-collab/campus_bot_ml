@@ -368,7 +368,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 // ── Method 1: Manual fetch with token ────────────────────────────
 const token = localStorage.getItem('campusbot_token');
 
-const response = await fetch('http://localhost:5000/api/auth/me', {
+const response = await fetch('https://campus-bot-ml.onrender.com', {
   method:  'GET',
   headers: {
     'Content-Type':  'application/json',

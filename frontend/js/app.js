@@ -15,7 +15,7 @@ const state = {
 };
 
 // ── Backend API URL (change if deploying) ──
-const API_BASE = 'http://127.0.0.1:5000/api';
+const API_BASE = 'https://campus-bot-ml.onrender.com';
 
 // ── DOM Shortcuts ──
 const $ = (id) => document.getElementById(id);
