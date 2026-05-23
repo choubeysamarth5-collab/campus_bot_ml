@@ -1425,10 +1425,13 @@ select.form-control option {
 
 @media (max-width: 768px) {
 
-  body,
-  html {
-    overflow-x: hidden;
+  .header {
     width: 100%;
+    overflow: visible;
+  }
+
+  .header-right {
+    overflow: visible;
   }
 
   .app-layout {
