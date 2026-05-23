@@ -1,0 +1,290 @@
+text,intent
+hostel fee,fees
+semester fee,fees
+how much fee,fees
+exam date,exam
+exam timetable,exam
+placement drive,placement
+library timing,library
+hostel rules,hostel
+canteen timing,canteen
+text,intent
+hostel fee,fees
+hostel charges,fees
+semester fee,fees
+college fee,fees
+how much is fee,fees
+tuition fee,fees
+payment details,fees
+fee structure,fees
+exam fee,fees
+library fine,fees
+
+exam date,exam
+exam timetable,exam
+exam routine,exam
+when are exams,exam
+semester exam schedule,exam
+mid sem date,exam
+end sem exam,exam
+supplementary exam,exam
+internal exam date,exam
+practical exam schedule,exam
+
+placement drive,placement
+campus placement,placement
+placement company,placement
+internship opportunity,placement
+job fair,placement
+recruitment drive,placement
+placement cell,placement
+highest package,placement
+average package,placement
+placement training,placement
+
+library timing,library
+library open time,library
+library closing time,library
+when does library open,library
+digital library,library
+reading room timing,library
+library rules,library
+issue books,library
+return books,library
+library card,library
+
+hostel rules,hostel
+hostel timing,hostel
+boys hostel,hostel
+girls hostel,hostel
+hostel facilities,hostel
+mess timing,hostel
+hostel room,hostel
+hostel warden,hostel
+hostel attendance,hostel
+hostel leave,hostel
+
+canteen timing,canteen
+canteen menu,canteen
+food court,canteen
+cafeteria timing,canteen
+snacks available,canteen
+canteen open time,canteen
+canteen closing,canteen
+tea stall,canteen
+lunch timing,canteen
+mess food,canteen
+
+admission process,admission
+admission form,admission
+how to apply,admission
+eligibility criteria,admission
+college admission,admission
+application deadline,admission
+required documents,admission
+admission fees,admission
+seat availability,admission
+direct admission,admission
+
+scholarship details,scholarship
+financial aid,scholarship
+merit scholarship,scholarship
+scholarship form,scholarship
+government scholarship,scholarship
+fee concession,scholarship
+scholarship eligibility,scholarship
+apply scholarship,scholarship
+student loan,scholarship
+scholarship amount,scholarship
+
+faculty details,faculty
+teacher contact,faculty
+hod name,faculty
+department faculty,faculty
+professor details,faculty
+faculty cabin,faculty
+teacher timing,faculty
+faculty room,faculty
+mentor details,faculty
+staff information,faculty
+
+sports facilities,sports
+cricket ground,sports
+football ground,sports
+gym facility,sports
+sports event,sports
+indoor games,sports
+sports teacher,sports
+annual sports,sports
+basketball court,sports
+sports registration,sports
+
+wifi password,wifi
+internet issue,wifi
+campus wifi,wifi
+wifi login,wifi
+network problem,wifi
+wifi access,wifi
+internet speed,wifi
+wifi registration,wifi
+wifi support,wifi
+wifi available,wifi
+when are exams,exams
+mid sem date,exams
+final exam schedule,exams
+semester exam,exams
+
+hostel fee,fees
+semester fee,fees
+payment details,fees
+tuition fee,fees
+
+placement drive,placements
+highest package,placements
+internship opportunity,placements
+
+library timing,library
+reading room timing,library
+
+hostel rules,hostel
+mess timing,hostel
+boys hostel,hostel
+
+when are exams,exams
+mid sem schedule,exams
+final exam date,exams
+exam timetable,exams
+practical exam timing,exams
+hall ticket download,exams
+supplementary exam,exams
+backlog exam details,exams
+internal marks,exams
+exam result date,exams
+
+परीक्षा कब है,exams
+मिड सेम टाइम टेबल,exams
+फाइनल एग्जाम डेट,exams
+एडमिट कार्ड डाउनलोड,exams
+रिजल्ट कब आएगा,exams
+
+परीक्षा कधी आहे,exams
+मिड सेम वेळापत्रक,exams
+निकाल तारीख,exams
+
+தேர்வு எப்போது,exams
+ஹால் டிக்கெட் பதிவிறக்கம்,exams
+முடிவுகள் எப்போது,exams
+
+పరీక్ష ఎప్పుడు,exams
+హాల్ టికెట్ డౌన్‌లోడ్,exams
+ఫలితాలు ఎప్పుడు,exams
+
+semester fee,fees
+hostel fee,fees
+tuition fee details,fees
+fee payment deadline,fees
+online payment portal,fees
+scholarship details,fees
+late fee penalty,fees
+payment receipt,fees
+
+कॉलेज फीस,fees
+सेमेस्टर फीस,fees
+फीस जमा करने की अंतिम तिथि,fees
+स्कॉलरशिप जानकारी,fees
+
+कॉलेज फी,fees
+शिष्यवृत्ती माहिती,fees
+
+கல்லூரி கட்டணம்,fees
+கட்டணம் செலுத்த கடைசி தேதி,fees
+
+కాలేజీ ఫీజు,fees
+ఫీజు చెల్లింపు చివరి తేదీ,fees
+
+hostel rules,hostel
+mess timing,hostel
+boys hostel details,hostel
+girls hostel details,hostel
+hostel wifi password,hostel
+room allotment,hostel
+warden contact,hostel
+laundry facility,hostel
+
+हॉस्टल नियम,hostel
+मेस टाइमिंग,hostel
+वार्डन नंबर,hostel
+
+वसतिगृह नियम,hostel
+मेस वेळ,hostel
+
+விடுதி விதிகள்,hostel
+மெஸ் நேரம்,hostel
+
+హాస్టల్ నియమాలు,hostel
+మెస్ టైమింగ్,hostel
+
+library timing,library
+book issue process,library
+digital library access,library
+library card renewal,library
+reading room timing,library
+fine for late return,library
+
+लाइब्रेरी टाइमिंग,library
+बुक इश्यू कैसे करें,library
+
+ग्रंथालय वेळ,library
+
+நூலக நேரம்,library
+
+లైబ్రరీ టైమింగ్,library
+
+placement drive,placements
+highest package,placements
+internship opportunities,placements
+campus recruitment,placements
+placement eligibility,placements
+resume submission,placements
+mock interview,placements
+
+प्लेसमेंट ड्राइव,placements
+इंटर्नशिप अवसर,placements
+
+प्लेसमेंट माहिती,placements
+
+வேலைவாய்ப்பு தகவல்,placements
+
+ప్లేస్‌మెంట్ డ్రైవ్,placements
+
+admission process,admissions
+required documents,admissions
+college admission last date,admissions
+application form,admissions
+entrance exam,admissions
+
+एडमिशन प्रक्रिया,admissions
+जरूरी दस्तावेज,admissions
+
+प्रवेश प्रक्रिया,admissions
+
+சேர்க்கை செயல்முறை,admissions
+
+అడ్మిషన్ ప్రక్రియ,admissions
+
+hello,greeting
+hi,greeting
+good morning,greeting
+good evening,greeting
+how are you,greeting
+thank you,greeting
+bye,greeting
+
+नमस्ते,greeting
+धन्यवाद,greeting
+
+नमस्कार,greeting
+
+வணக்கம்,greeting
+
+నమస్కారం,greeting
