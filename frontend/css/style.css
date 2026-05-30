@@ -22,7 +22,7 @@
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   --radius: 18px;
   --radius-sm: 10px;
-  --header-h: 60px;
+  --header-h: 68px;
   --input-h: 72px;
   --sidebar-w: 240px;
   --font-display: 'Syne', sans-serif;
@@ -113,8 +113,8 @@ a {
 }
 
 .bot-avatar {
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   background: var(--accent-glow);
   border: 1.5px solid var(--accent);
   border-radius: 50%;
@@ -1535,7 +1535,7 @@ select.form-control option {
     font-size: 0.75rem;
   }
 
-  .lang-menu {
+.lang-menu {
 
     position: fixed;
 
@@ -1562,18 +1562,17 @@ select.form-control option {
     z-index: 999999;
 
     box-shadow: var(--shadow);
-  }
-
-  .lang-menu .lang-btn {
+}
+.lang-menu .lang-btn {
 
     padding: 6px 8px;
 
     font-size: 0.78rem;
 
     border-radius: 10px;
-  }
+}
 
-  .admin-link {
+ .admin-link {
 
     height: 38px;
 
@@ -1590,7 +1589,7 @@ select.form-control option {
     gap: 4px;
 
     white-space: nowrap;
-  }
+}
 
 
   .profile-btn,
@@ -1801,7 +1800,6 @@ body {
     overflow: hidden !important;
   }
 }
-
 /* =================================
    MOBILE HEADER SPACE FIX
 ================================= */
@@ -1816,7 +1814,6 @@ body {
     gap: 4px;
   }
 }
-
 /* =================================
    SIDEBAR PROFILE BUTTON
 ================================= */
@@ -1867,16 +1864,5 @@ body {
 
   .sidebar-profile-btn {
     display: block;
-  }
-}
-
-@media (max-width: 768px) {
-
-  .bot-name {
-    font-size: 0.95rem !important;
-  }
-
-  .bot-status {
-    display: none !important;
   }
 }
